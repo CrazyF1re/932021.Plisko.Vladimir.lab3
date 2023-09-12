@@ -1,0 +1,89 @@
+/* все отступы на 0 */
+body{
+    margin: 0;
+}
+/* хедер */
+.header{
+    background-color: green;
+    width: 100%;
+    text-align: center;
+    color:white;
+    padding: 10px 0 10px 0; 
+}
+/* текст хедера и его шрифт */
+.h2header{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    margin: inherit;
+}
+/* левая менюшка с псевдоссылками */
+.leftMenu{
+    background-color: red;
+    color:white;
+    padding: 15px 20px 0px 15px;
+    float:left;
+    width:18%;
+    height: 100%;
+    text-align: left;
+    
+}
+/* настройки контейнера для правильного расположения подвала страницы  */
+.flex{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* див с левой менюшкой и текстом */
+.page{
+    max-width: 800px;
+    margin:0 auto;
+    flex-grow: 1;
+}
+/* список */
+ul{
+    list-style: none;
+    padding-left: 3vh;
+}
+/* элементы списка */
+li{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+/* текст */
+.info{
+    max-width:60%;
+    margin:3vh;
+    margin-right: 0;
+    
+    float:left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+/* стиль текста */
+.info::first-letter{
+    color:red;
+    font-weight: 500;
+    font-size: 150%;
+}
+/* подвал */
+.footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 3px 0 3px 0;
+}
+/* текст подвала */
+.h3footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    margin:0;   
+}
+/* выделение текста */
+::selection {
+    background: green; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+   }
+li:hover
+{
+    background-color: green;
+    color: white;
+}
